@@ -31,12 +31,6 @@ jobs:
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
 
-    # Install the .NET Core workload
-    - name: Install .NET Core
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 4.8.1
-
     - uses: mxschmitt/action-tmate@v3
 
     - name: Build
